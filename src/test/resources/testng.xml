@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Spribe" verbose="1" >
+    <test name="Player" parallel="classes" thread-count="3">
+        <classes>
+            <class name="api.tests.player.CreatePlayerTests"></class>
+            <class name="api.tests.player.GetPlayerTests"></class>
+            <class name="api.tests.player.DeletePlayerTests"></class>
+        </classes>
+    </test>
+</suite>
